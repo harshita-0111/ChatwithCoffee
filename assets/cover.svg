@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#FFD194"/>
+      <stop offset="100%" stop-color="#D1913C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="300" fill="url(#g)" rx="16"/>
+  <g transform="translate(60,40)">
+    <g transform="translate(0,0)">
+      <path d="M60 30c0-16 14-30 30-30s30 14 30 30-14 30-30 30-30-14-30-30z" fill="#6B4F2A"/>
+      <rect x="35" y="70" width="130" height="70" rx="12" fill="#6B4F2A"/>
+      <path d="M40 65c0-10 8-18 18-18h94" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(220,20)">
+      <rect x="0" y="0" width="840" height="220" rx="12" fill="rgba(255,255,255,0.06)"/>
+      <text x="60" y="100" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="56" fill="#fff">ChatWithCoffee</text>
+      <text x="60" y="160" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="20" fill="#fff" opacity="0.9">A simple chatbot assistant to help you while you sip your coffee.</text>
+    </g>
+  </g>
+</svg>

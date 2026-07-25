@@ -1,0 +1,11 @@
+# Project dependencies (common chatbot/server libs)
+fastapi>=0.95.0
+uvicorn[standard]>=0.22.0
+langchain>=0.0.300
+python-dotenv>=1.0.0
+requests>=2.31.0
+typing-extensions>=4.5.0
+rich>=13.3.0
+langgraph>=0.2.0
+langchain-groq>=0.1.0
+streamlit>=1.35.0
