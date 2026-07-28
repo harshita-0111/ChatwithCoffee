@@ -87,12 +87,19 @@ Then open the local URL shown in your terminal (usually `http://localhost:8501`)
 - Streamlit opens but no model response
 	- Verify internet connectivity and Groq key validity.
 
-## Tech Stack
+## Deployment to Streamlit Community Cloud
 
-- Streamlit
-- LangChain
-- LangGraph
-- Groq
-- Python Dotenv
+1. Push your latest code to GitHub repository (`harshita-0111/ChatwithCoffee`).
+2. Go to [share.streamlit.io](https://share.streamlit.io/) and log in with your GitHub account.
+3. Click **"New app"**.
+4. Select your repository: `harshita-0111/ChatwithCoffee`
+5. Select Branch: `main`
+6. Set **Main file path**: `frontend.py`
+7. Click **Advanced settings...** and add your `GROQ_API_KEY` under **Secrets**:
+   ```toml
+   GROQ_API_KEY = "your_actual_groq_api_key"
+   ```
+8. Click **Deploy!**
+
 
 

@@ -27,7 +27,15 @@ def _build_llm() -> ChatGroq:
     # Keep key validation here so failures are clear and early.
     api_key = os.getenv("GROQ_API_KEY")
     if not api_key:
-        raise RuntimeError("Missing GROQ_API_KEY in environment (.env)")
+        try:
+            import streamlit as st
+            if "GROQ_API_KEY" in st.secrets:
+                api_key = st.secrets["GROQ_API_KEY"]
+        except Exception:
+            pass
+
+    if not api_key:
+        raise RuntimeError("Missing GROQ_API_KEY in environment (.env or Streamlit Secrets)")
 
     return ChatGroq(model="llama-3.1-8b-instant", api_key=api_key)
 
