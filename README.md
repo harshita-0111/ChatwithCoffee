@@ -2,6 +2,8 @@
 
 ![ChatWithCoffee Cover](assets/coverimg.png)
 
+![ChatWithCoffee Streamlit Demo](assets/streamlit_demo.png)
+
 ChatWithCoffee is a lightweight, Streamlit-based chatbot assistant powered by Groq + LangChain + LangGraph.
 It is designed for a clean local development workflow: simple UI, stateful chat history, and quick iteration.
 
@@ -23,6 +25,7 @@ Chatwithcoffee/
 ├─ .env                 # Local secrets (ignored by git)
 └─ assets/
 	 ├─ coverimg.png
+	 ├─ streamlit_demo.png # Streamlit UI demo screenshot
 	 ├─ cover.svg
 	 └─ images.jpeg       # Assistant avatar
 ```
